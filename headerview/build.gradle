@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'bintray-release'
+//apply plugin: 'bintray-release'
+
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.2'
@@ -17,12 +18,12 @@ android {
         }
     }
 
-    publish {
+    /*publish {
         userOrg = 'raphaelbussa'
         groupId = 'rebus'
         artifactId = 'header-view'
         publishVersion = '1.1.4e'
-    }
+    }*/
 
 }
 dependencies {
