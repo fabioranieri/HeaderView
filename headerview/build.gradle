@@ -21,7 +21,7 @@ android {
         userOrg = 'raphaelbussa'
         groupId = 'rebus'
         artifactId = 'header-view'
-        publishVersion = '1.1.4'
+        publishVersion = '1.1.4e'
     }
 
 }
