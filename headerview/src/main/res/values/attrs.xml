@@ -7,4 +7,6 @@
         <attr name="biv_selectorOnPress" format="color|reference" />
     </declare-styleable>
 
+    <attr name="textFieldStyle" format="reference"/>
+
 </resources>

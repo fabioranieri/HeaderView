@@ -53,8 +53,8 @@ public class HeaderView extends RelativeLayout {
     private boolean belowToolbar;
     private ImageView headerBackground;
     private BezelImageView avatar;
-    private TextView userName;
-    private TextView userEmail;
+    private CustomViewWithTypefaceSupport userName;
+    private CustomViewWithTypefaceSupport userEmail;
     private HeaderInterface.OnHeaderClickListener onHeaderClickListener;
     private HeaderInterface.OnHeaderLongClickListener onHeaderLongClickListener;
     private HeaderInterface.OnAvatarClickListener onAvatarClickListener;
@@ -153,14 +153,14 @@ public class HeaderView extends RelativeLayout {
         linearLayout.setPadding(marginSize, marginSize, marginSize + textSize, marginSize);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, textSize);
-        userName = new TextView(getContext());
+        userName = new CustomViewWithTypefaceSupport(getContext());
         userName.setTextColor(Color.WHITE);
         userName.setTypeface(Typeface.DEFAULT_BOLD);
         userName.setGravity(Gravity.CENTER_VERTICAL);
         userName.setSingleLine();
         userName.setEllipsize(TextUtils.TruncateAt.END);
         userName.setLayoutParams(textParams);
-        userEmail = new TextView(getContext());
+        userEmail = new CustomViewWithTypefaceSupport(getContext());
         userEmail.setTextColor(Color.WHITE);
         userEmail.setGravity(Gravity.CENTER_VERTICAL);
         userEmail.setSingleLine();
