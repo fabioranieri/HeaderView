@@ -40,5 +40,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/dev-fingerlinks/maven/' }
     }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
