@@ -198,9 +198,21 @@ public class HeaderView extends RelativeLayout {
         this.userName.setText(username);
     }
 
+    public void username(String username, Typeface typeface) {
+        if (username == null) this.userName.setVisibility(GONE);
+        this.userName.setText(username);
+        this.userName.setTypeface(typeface);
+    }
+
     public void email(String email) {
         if (email == null) this.userEmail.setVisibility(GONE);
         this.userEmail.setText(email);
+    }
+
+    public void email(String email, Typeface typeface) {
+        if (email == null) this.userEmail.setVisibility(GONE);
+        this.userEmail.setText(email);
+        this.userEmail.setTypeface(typeface);
     }
 
     private int height(Context context) {
