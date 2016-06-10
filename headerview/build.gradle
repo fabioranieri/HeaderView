@@ -11,6 +11,7 @@ android {
         versionCode 7
         versionName "1.1.5"
     }
+
     buildTypes {
         release {
             minifyEnabled false
